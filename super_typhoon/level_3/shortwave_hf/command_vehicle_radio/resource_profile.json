@@ -1,0 +1,127 @@
+{
+  "resource_id": "super_typhoon_level_3_shortwave_hf_command_vehicle_radio",
+  "region": "super_typhoon",
+  "region_label": "特大台风",
+  "disaster_scenario": "super_typhoon",
+  "disaster_label": "特大台风",
+  "disaster_type": "typhoon",
+  "disaster_severity": "level_3",
+  "disaster_severity_label": "严重",
+  "disaster_severity_description": "大面积断电、断站或拥塞，蜂窝可用率低，卫星和短波占比上升。",
+  "has_residual_network": true,
+  "scenario_characteristics": [
+    "强风、风暴潮和长时间停电导致沿海宏站倒伏、回传中断。",
+    "蜂窝覆盖半径和可用带宽下降明显，便携 WiFi 受站址和供电影响。",
+    "卫星与短波承担跨区域回传、广播告警和低速保底通信。"
+  ],
+  "communication_type": "Shortwave_HF",
+  "communication_directory": "shortwave_hf",
+  "communication_label": "Shortwave HF",
+  "base_station_type": "command_vehicle_radio",
+  "base_station_label": "command-vehicle shortwave radio",
+  "base_station_role": "Vehicle radio node for resilient command communication and field coordination.",
+  "deployment_sample_count": 4,
+  "measurement_periods": [
+    {
+      "measurement_period": "historical",
+      "date_range": "2023-01-01/2023-12-31"
+    },
+    {
+      "measurement_period": "new_collection",
+      "collection_dates": [
+        "2026-04-21",
+        "2026-04-22"
+      ]
+    }
+  ],
+  "cell_user_count": 2,
+  "downlink_bandwidth_mbps": {
+    "min": 0.144,
+    "max": 0.319,
+    "avg": 0.25
+  },
+  "uplink_bandwidth_mbps": {
+    "min": 0.094,
+    "max": 0.207,
+    "avg": 0.162
+  },
+  "mss_bytes": 1358,
+  "connection_success_rate": 0.7363,
+  "connection_failure_rate": 0.2637,
+  "average_business_throughput_mbps": 20.444,
+  "coverage_radius_km": 17.924,
+  "tx_power_watt": 131.25,
+  "connection_attempt_count": 24000,
+  "connection_success_count": 17672,
+  "connection_failure_count": 6328,
+  "deployment_summary": {
+    "physical_station_count": 4,
+    "active_station_count": 0,
+    "degraded_station_count": 3,
+    "offline_station_count": 1,
+    "damaged_station_count": 1,
+    "damage_level_counts": {
+      "intact": 3,
+      "offline": 1
+    },
+    "total_cell_user_count": 3,
+    "average_cell_user_count": 0.75,
+    "unique_grid_count": 4,
+    "effective_covered_grid_count": 3,
+    "estimated_grid_area_km2": 34.0,
+    "estimated_effective_grid_area_km2": 25.5,
+    "radio_coverage_area_km2_no_overlap_removed": 2734.559
+  },
+  "operation_status_summary": {
+    "physical_station_count": 4,
+    "status_counts": {
+      "degraded": 3,
+      "offline": 1
+    },
+    "status_ratio": {
+      "degraded": 0.75,
+      "offline": 0.25
+    },
+    "damaged_station_count": 1,
+    "damaged_station_ratio": 0.25,
+    "offline_station_ratio": 0.25,
+    "dominant_status": "degraded"
+  },
+  "region_grid": {
+    "rows": 20,
+    "cols": 12,
+    "grid_count": 240,
+    "affected_area_km2": 2040.0,
+    "coverage_area_km2": 2040.0,
+    "grid_cell_area_km2": 8.5,
+    "event_center_grid": {
+      "row": 7,
+      "col": 7
+    },
+    "geo_bounds": {
+      "lat_min": 26.6,
+      "lat_max": 27.12,
+      "lon_min": 119.74,
+      "lon_max": 120.39
+    },
+    "geo_points": [
+      {
+        "lon": 119.74,
+        "lat": 26.6
+      },
+      {
+        "lon": 119.85,
+        "lat": 26.81
+      },
+      {
+        "lon": 120.39,
+        "lat": 27.12
+      }
+    ]
+  },
+  "affected_area_km2": 2040.0,
+  "grid_rows": 20,
+  "grid_cols": 12,
+  "grid_count": 240,
+  "grid_cell_area_km2": 8.5
+}

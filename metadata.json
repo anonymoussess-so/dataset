@@ -1,0 +1,425 @@
+{
+  "dataset_name": "Measured Disaster Communication Resource Dataset",
+  "dataset_type": "field_measurement_fusion",
+  "schema_hierarchy": "disaster_scenario(region) -> disaster_severity -> communication_type -> base_station_type -> cell info + business/user sessions",
+  "disaster_scenario_count": 3,
+  "disaster_severity_count": 4,
+  "disaster_severity_levels": {
+    "level_1": {
+      "description": "少量基站受损，带宽轻微下降，连接成功率较高，恢复快。",
+      "affected_grid_radius": 5.5,
+      "damage_core_radius": 2.0,
+      "damage_rate": 0.08,
+      "offline_rate": 0.02,
+      "bandwidth_factor": 0.95,
+      "availability_factor": 1.02,
+      "latency_factor": 0.85,
+      "retransmission_factor": 0.75,
+      "coverage_factor": 0.95,
+      "cell_user_factor": 0.95,
+      "communication_adjustments": {
+        "5G_700MHz": {
+          "bandwidth_factor": 1.0,
+          "availability_factor": 1.0,
+          "coverage_factor": 1.0,
+          "damage_factor": 1.1
+        },
+        "Satellite_Ka": {
+          "bandwidth_factor": 1.0,
+          "availability_factor": 1.0,
+          "coverage_factor": 1.0,
+          "damage_factor": 0.45
+        },
+        "WiFi6": {
+          "bandwidth_factor": 1.0,
+          "availability_factor": 1.0,
+          "coverage_factor": 1.0,
+          "damage_factor": 0.85
+        },
+        "Shortwave_HF": {
+          "bandwidth_factor": 1.0,
+          "availability_factor": 1.0,
+          "coverage_factor": 1.0,
+          "damage_factor": 0.35
+        }
+      }
+    },
+    "level_2": {
+      "description": "部分基站或回传受损，带宽明显下降，时延和失败率上升。",
+      "affected_grid_radius": 8.0,
+      "damage_core_radius": 3.2,
+      "damage_rate": 0.22,
+      "offline_rate": 0.08,
+      "bandwidth_factor": 0.75,
+      "availability_factor": 0.85,
+      "latency_factor": 1.15,
+      "retransmission_factor": 1.2,
+      "coverage_factor": 0.85,
+      "cell_user_factor": 1.08,
+      "communication_adjustments": {
+        "5G_700MHz": {
+          "bandwidth_factor": 0.92,
+          "availability_factor": 0.94,
+          "coverage_factor": 0.92,
+          "damage_factor": 1.2
+        },
+        "Satellite_Ka": {
+          "bandwidth_factor": 1.02,
+          "availability_factor": 1.03,
+          "coverage_factor": 1.0,
+          "damage_factor": 0.5
+        },
+        "WiFi6": {
+          "bandwidth_factor": 0.88,
+          "availability_factor": 0.92,
+          "coverage_factor": 0.88,
+          "damage_factor": 0.95
+        },
+        "Shortwave_HF": {
+          "bandwidth_factor": 1.04,
+          "availability_factor": 1.04,
+          "coverage_factor": 1.02,
+          "damage_factor": 0.4
+        }
+      }
+    },
+    "level_3": {
+      "description": "大面积断电、断站或拥塞，蜂窝可用率低，卫星和短波占比上升。",
+      "affected_grid_radius": 10.5,
+      "damage_core_radius": 4.8,
+      "damage_rate": 0.45,
+      "offline_rate": 0.22,
+      "bandwidth_factor": 0.55,
+      "availability_factor": 0.65,
+      "latency_factor": 1.45,
+      "retransmission_factor": 1.6,
+      "coverage_factor": 0.7,
+      "cell_user_factor": 1.2,
+      "communication_adjustments": {
+        "5G_700MHz": {
+          "bandwidth_factor": 0.7,
+          "availability_factor": 0.72,
+          "coverage_factor": 0.76,
+          "damage_factor": 1.35
+        },
+        "Satellite_Ka": {
+          "bandwidth_factor": 1.05,
+          "availability_factor": 1.12,
+          "coverage_factor": 1.02,
+          "damage_factor": 0.55
+        },
+        "WiFi6": {
+          "bandwidth_factor": 0.82,
+          "availability_factor": 0.94,
+          "coverage_factor": 0.82,
+          "damage_factor": 1.05
+        },
+        "Shortwave_HF": {
+          "bandwidth_factor": 1.1,
+          "availability_factor": 1.16,
+          "coverage_factor": 1.06,
+          "damage_factor": 0.45
+        }
+      }
+    },
+    "level_4": {
+      "description": "残余公网极弱或不可用，主要依赖卫星、短波、应急车、临时 WiFi Mesh。",
+      "affected_grid_radius": 13.0,
+      "damage_core_radius": 6.5,
+      "damage_rate": 0.68,
+      "offline_rate": 0.38,
+      "bandwidth_factor": 0.35,
+      "availability_factor": 0.45,
+      "latency_factor": 1.8,
+      "retransmission_factor": 2.2,
+      "coverage_factor": 0.55,
+      "cell_user_factor": 1.35,
+      "communication_adjustments": {
+        "5G_700MHz": {
+          "bandwidth_factor": 0.45,
+          "availability_factor": 0.58,
+          "coverage_factor": 0.55,
+          "damage_factor": 1.5
+        },
+        "Satellite_Ka": {
+          "bandwidth_factor": 1.08,
+          "availability_factor": 1.24,
+          "coverage_factor": 1.04,
+          "damage_factor": 0.6
+        },
+        "WiFi6": {
+          "bandwidth_factor": 0.78,
+          "availability_factor": 1.02,
+          "coverage_factor": 0.78,
+          "damage_factor": 1.1
+        },
+        "Shortwave_HF": {
+          "bandwidth_factor": 1.16,
+          "availability_factor": 1.28,
+          "coverage_factor": 1.1,
+          "damage_factor": 0.5
+        }
+      }
+    }
+  },
+  "disaster_scenarios": {
+    "extreme_rainstorm": {
+      "label": "超强暴雨",
+      "disaster_type": "rainstorm",
+      "has_residual_network": true,
+      "characteristics": [
+        "城市内涝导致机房进水、供电不稳，低洼区域用户向避险点聚集。",
+        "700 MHz 蜂窝仍有一定穿透能力，WiFi 热点受进水和断电影响明显。",
+        "Ka 卫星链路存在雨衰，短波作为低速应急控制链路更稳定。"
+      ],
+      "historical_date_range": "2023-01-01/2023-12-31",
+      "new_collection_dates": [
+        "2026-04-23"
+      ],
+      "geo_bounds": {
+        "lat_min": 32.9833,
+        "lat_max": 32.9833,
+        "lon_min": 112.5167,
+        "lon_max": 112.5167
+      },
+      "geo_points": [
+        {
+          "lon": 112.5167,
+          "lat": 32.9833
+        }
+      ],
+      "coverage_area_km2": 900.0,
+      "grid_cell_area_km2": 7.5,
+      "grid_rows": 10,
+      "grid_cols": 12,
+      "grid_count": 120,
+      "region_grid": {
+        "rows": 10,
+        "cols": 12,
+        "grid_count": 120,
+        "affected_area_km2": 900.0,
+        "coverage_area_km2": 900.0,
+        "grid_cell_area_km2": 7.5,
+        "event_center_grid": {
+          "row": 4,
+          "col": 6
+        },
+        "geo_bounds": {
+          "lat_min": 32.9833,
+          "lat_max": 32.9833,
+          "lon_min": 112.5167,
+          "lon_max": 112.5167
+        },
+        "geo_points": [
+          {
+            "lon": 112.5167,
+            "lat": 32.9833
+          }
+        ]
+      },
+      "affected_area_km2": 900.0
+    },
+    "super_typhoon": {
+      "label": "特大台风",
+      "disaster_type": "typhoon",
+      "has_residual_network": true,
+      "characteristics": [
+        "强风、风暴潮和长时间停电导致沿海宏站倒伏、回传中断。",
+        "蜂窝覆盖半径和可用带宽下降明显，便携 WiFi 受站址和供电影响。",
+        "卫星与短波承担跨区域回传、广播告警和低速保底通信。"
+      ],
+      "historical_date_range": "2023-01-01/2023-12-31",
+      "new_collection_dates": [
+        "2026-04-21",
+        "2026-04-22"
+      ],
+      "geo_bounds": {
+        "lat_min": 26.6,
+        "lat_max": 27.12,
+        "lon_min": 119.74,
+        "lon_max": 120.39
+      },
+      "geo_points": [
+        {
+          "lon": 119.74,
+          "lat": 26.6
+        },
+        {
+          "lon": 119.85,
+          "lat": 26.81
+        },
+        {
+          "lon": 120.39,
+          "lat": 27.12
+        }
+      ],
+      "coverage_area_km2": 2040.0,
+      "grid_cell_area_km2": 8.5,
+      "grid_rows": 20,
+      "grid_cols": 12,
+      "grid_count": 240,
+      "region_grid": {
+        "rows": 20,
+        "cols": 12,
+        "grid_count": 240,
+        "affected_area_km2": 2040.0,
+        "coverage_area_km2": 2040.0,
+        "grid_cell_area_km2": 8.5,
+        "event_center_grid": {
+          "row": 7,
+          "col": 7
+        },
+        "geo_bounds": {
+          "lat_min": 26.6,
+          "lat_max": 27.12,
+          "lon_min": 119.74,
+          "lon_max": 120.39
+        },
+        "geo_points": [
+          {
+            "lon": 119.74,
+            "lat": 26.6
+          },
+          {
+            "lon": 119.85,
+            "lat": 26.81
+          },
+          {
+            "lon": 120.39,
+            "lat": 27.12
+          }
+        ]
+      },
+      "affected_area_km2": 2040.0
+    },
+    "destructive_earthquake": {
+      "label": "强破坏地震",
+      "disaster_type": "earthquake",
+      "has_residual_network": false,
+      "characteristics": [
+        "地震造成基站、传输光缆和供电设施物理损毁，残余公网能力最弱。",
+        "蜂窝链路主要依赖应急车和快速部署小站，早期可用率低、恢复慢。",
+        "卫星、短波和临时 WiFi Mesh 是震后 0-72 小时的关键兜底资源。"
+      ],
+      "historical_date_range": "2023-01-01/2023-12-31",
+      "new_collection_dates": [
+        "2026-04-08",
+        "2026-04-09"
+      ],
+      "geo_bounds": {
+        "lat_min": 42.47857642,
+        "lat_max": 42.639272,
+        "lon_min": 126.6789236,
+        "lon_max": 126.9939071
+      },
+      "geo_points": [
+        {
+          "lon": 126.6789236,
+          "lat": 42.55132274
+        },
+        {
+          "lon": 126.8762756,
+          "lat": 42.6001312
+        },
+        {
+          "lon": 126.8972619,
+          "lat": 42.47857642
+        },
+        {
+          "lon": 126.924691,
+          "lat": 42.56627566
+        },
+        {
+          "lon": 126.9939071,
+          "lat": 42.639272
+        }
+      ],
+      "coverage_area_km2": 480.0,
+      "grid_cell_area_km2": 8.0,
+      "grid_rows": 5,
+      "grid_cols": 12,
+      "grid_count": 60,
+      "region_grid": {
+        "rows": 5,
+        "cols": 12,
+        "grid_count": 60,
+        "affected_area_km2": 480.0,
+        "coverage_area_km2": 480.0,
+        "grid_cell_area_km2": 8.0,
+        "event_center_grid": {
+          "row": 2,
+          "col": 5
+        },
+        "geo_bounds": {
+          "lat_min": 42.47857642,
+          "lat_max": 42.639272,
+          "lon_min": 126.6789236,
+          "lon_max": 126.9939071
+        },
+        "geo_points": [
+          {
+            "lon": 126.6789236,
+            "lat": 42.55132274
+          },
+          {
+            "lon": 126.8762756,
+            "lat": 42.6001312
+          },
+          {
+            "lon": 126.8972619,
+            "lat": 42.47857642
+          },
+          {
+            "lon": 126.924691,
+            "lat": 42.56627566
+          },
+          {
+            "lon": 126.9939071,
+            "lat": 42.639272
+          }
+        ]
+      },
+      "affected_area_km2": 480.0
+    }
+  },
+  "communication_type_count": 4,
+  "unique_base_station_type_count": 10,
+  "scenario_base_station_profile_count": 120,
+  "deployment_sample_count": 1260,
+  "business_session_count": 2880000,
+  "measurement_periods": {
+    "historical": {
+      "date_range": "2023-01-01/2023-12-31",
+      "description": "历史实测数据"
+    },
+    "new_collection": {
+      "scenario_dates": {
+        "extreme_rainstorm": [
+          "2026-04-23"
+        ],
+        "super_typhoon": [
+          "2026-04-21",
+          "2026-04-22"
+        ],
+        "destructive_earthquake": [
+          "2026-04-08",
+          "2026-04-09"
+        ]
+      },
+      "description": "新采集实测数据"
+    }
+  },
+  "global_business_summary": {
+    "duration_ms_avg": 18412.387,
+    "duration_ms_p95": 85164.2,
+    "data_volume_bytes_avg": 2087312.141,
+    "latency_ms_avg": 24.66,
+    "latency_ms_p95": 52.0,
+    "video_throughput_mbps_avg": 19.492,
+    "video_throughput_mbps_p95": 100.017,
+    "play_success_rate": 0.762,
+    "mss_bytes_avg": 1358.9,
+    "tcp_reordering_packets_avg": 35.065,
+    "tcp_retrans_packets_avg": 18.242
+  }
+}

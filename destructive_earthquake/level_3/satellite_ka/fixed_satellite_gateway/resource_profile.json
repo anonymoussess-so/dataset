@@ -1,0 +1,135 @@
+{
+  "resource_id": "destructive_earthquake_level_3_satellite_ka_fixed_satellite_gateway",
+  "region": "destructive_earthquake",
+  "region_label": "强破坏地震",
+  "disaster_scenario": "destructive_earthquake",
+  "disaster_label": "强破坏地震",
+  "disaster_type": "earthquake",
+  "disaster_severity": "level_3",
+  "disaster_severity_label": "严重",
+  "disaster_severity_description": "大面积断电、断站或拥塞，蜂窝可用率低，卫星和短波占比上升。",
+  "has_residual_network": false,
+  "scenario_characteristics": [
+    "地震造成基站、传输光缆和供电设施物理损毁，残余公网能力最弱。",
+    "蜂窝链路主要依赖应急车和快速部署小站，早期可用率低、恢复慢。",
+    "卫星、短波和临时 WiFi Mesh 是震后 0-72 小时的关键兜底资源。"
+  ],
+  "communication_type": "Satellite_Ka",
+  "communication_directory": "satellite_ka",
+  "communication_label": "Ka-band satellite",
+  "base_station_type": "fixed_satellite_gateway",
+  "base_station_label": "fixed Ka emergency satellite gateway",
+  "base_station_role": "Higher-capacity fixed satellite gateway for shelters, hospitals and command centers.",
+  "deployment_sample_count": 5,
+  "measurement_periods": [
+    {
+      "measurement_period": "historical",
+      "date_range": "2023-01-01/2023-12-31"
+    },
+    {
+      "measurement_period": "new_collection",
+      "collection_dates": [
+        "2026-04-08",
+        "2026-04-09"
+      ]
+    }
+  ],
+  "cell_user_count": 23,
+  "downlink_bandwidth_mbps": {
+    "min": 9.322,
+    "max": 58.264,
+    "avg": 23.89
+  },
+  "uplink_bandwidth_mbps": {
+    "min": 2.61,
+    "max": 16.314,
+    "avg": 6.689
+  },
+  "mss_bytes": 1359,
+  "connection_success_rate": 0.9701,
+  "connection_failure_rate": 0.0299,
+  "average_business_throughput_mbps": 19.177,
+  "coverage_radius_km": 6.909,
+  "tx_power_watt": 50.669,
+  "connection_attempt_count": 24000,
+  "connection_success_count": 23283,
+  "connection_failure_count": 717,
+  "deployment_summary": {
+    "physical_station_count": 5,
+    "active_station_count": 4,
+    "degraded_station_count": 1,
+    "offline_station_count": 0,
+    "damaged_station_count": 1,
+    "damage_level_counts": {
+      "minor_damage": 1,
+      "intact": 4
+    },
+    "total_cell_user_count": 101,
+    "average_cell_user_count": 20.2,
+    "unique_grid_count": 5,
+    "effective_covered_grid_count": 5,
+    "estimated_grid_area_km2": 40.0,
+    "estimated_effective_grid_area_km2": 40.0,
+    "radio_coverage_area_km2_no_overlap_removed": 671.77
+  },
+  "operation_status_summary": {
+    "physical_station_count": 5,
+    "status_counts": {
+      "degraded": 1,
+      "active": 4
+    },
+    "status_ratio": {
+      "degraded": 0.2,
+      "active": 0.8
+    },
+    "damaged_station_count": 1,
+    "damaged_station_ratio": 0.2,
+    "offline_station_ratio": 0.0,
+    "dominant_status": "active"
+  },
+  "region_grid": {
+    "rows": 5,
+    "cols": 12,
+    "grid_count": 60,
+    "affected_area_km2": 480.0,
+    "coverage_area_km2": 480.0,
+    "grid_cell_area_km2": 8.0,
+    "event_center_grid": {
+      "row": 2,
+      "col": 5
+    },
+    "geo_bounds": {
+      "lat_min": 42.47857642,
+      "lat_max": 42.639272,
+      "lon_min": 126.6789236,
+      "lon_max": 126.9939071
+    },
+    "geo_points": [
+      {
+        "lon": 126.6789236,
+        "lat": 42.55132274
+      },
+      {
+        "lon": 126.8762756,
+        "lat": 42.6001312
+      },
+      {
+        "lon": 126.8972619,
+        "lat": 42.47857642
+      },
+      {
+        "lon": 126.924691,
+        "lat": 42.56627566
+      },
+      {
+        "lon": 126.9939071,
+        "lat": 42.639272
+      }
+    ]
+  },
+  "affected_area_km2": 480.0,
+  "grid_rows": 5,
+  "grid_cols": 12,
+  "grid_count": 60,
+  "grid_cell_area_km2": 8.0
+}

@@ -1,0 +1,118 @@
+{
+  "resource_id": "extreme_rainstorm_level_1_cellular_5g_700mhz_backpack_micro_cell",
+  "region": "extreme_rainstorm",
+  "region_label": "超强暴雨",
+  "disaster_scenario": "extreme_rainstorm",
+  "disaster_label": "超强暴雨",
+  "disaster_type": "rainstorm",
+  "disaster_severity": "level_1",
+  "disaster_severity_label": "一般",
+  "disaster_severity_description": "少量基站受损，带宽轻微下降，连接成功率较高，恢复快。",
+  "has_residual_network": true,
+  "scenario_characteristics": [
+    "城市内涝导致机房进水、供电不稳，低洼区域用户向避险点聚集。",
+    "700 MHz 蜂窝仍有一定穿透能力，WiFi 热点受进水和断电影响明显。",
+    "Ka 卫星链路存在雨衰，短波作为低速应急控制链路更稳定。"
+  ],
+  "communication_type": "5G_700MHz",
+  "communication_directory": "cellular_5g_700mhz",
+  "communication_label": "5G 700 MHz cellular",
+  "base_station_type": "backpack_micro_cell",
+  "base_station_label": "backpack 5G 700 MHz micro cell",
+  "base_station_role": "Portable low-band cell for rescue teams and isolated user clusters.",
+  "deployment_sample_count": 10,
+  "measurement_periods": [
+    {
+      "measurement_period": "historical",
+      "date_range": "2023-01-01/2023-12-31"
+    },
+    {
+      "measurement_period": "new_collection",
+      "collection_dates": [
+        "2026-04-23"
+      ]
+    }
+  ],
+  "cell_user_count": 8,
+  "downlink_bandwidth_mbps": {
+    "min": 7.624,
+    "max": 47.652,
+    "avg": 32.817
+  },
+  "uplink_bandwidth_mbps": {
+    "min": 3.202,
+    "max": 20.014,
+    "avg": 13.783
+  },
+  "mss_bytes": 1360,
+  "connection_success_rate": 0.9943,
+  "connection_failure_rate": 0.0057,
+  "average_business_throughput_mbps": 17.942,
+  "coverage_radius_km": 0.629,
+  "tx_power_watt": 17.638,
+  "connection_attempt_count": 24000,
+  "connection_success_count": 23863,
+  "connection_failure_count": 137,
+  "deployment_summary": {
+    "physical_station_count": 10,
+    "active_station_count": 9,
+    "degraded_station_count": 1,
+    "offline_station_count": 0,
+    "damaged_station_count": 1,
+    "damage_level_counts": {
+      "minor_damage": 1,
+      "intact": 9
+    },
+    "total_cell_user_count": 70,
+    "average_cell_user_count": 7.0,
+    "unique_grid_count": 10,
+    "effective_covered_grid_count": 10,
+    "estimated_grid_area_km2": 75.0,
+    "estimated_effective_grid_area_km2": 75.0,
+    "radio_coverage_area_km2_no_overlap_removed": 11.544
+  },
+  "operation_status_summary": {
+    "physical_station_count": 10,
+    "status_counts": {
+      "degraded": 1,
+      "active": 9
+    },
+    "status_ratio": {
+      "degraded": 0.1,
+      "active": 0.9
+    },
+    "damaged_station_count": 1,
+    "damaged_station_ratio": 0.1,
+    "offline_station_ratio": 0.0,
+    "dominant_status": "active"
+  },
+  "region_grid": {
+    "rows": 10,
+    "cols": 12,
+    "grid_count": 120,
+    "affected_area_km2": 900.0,
+    "coverage_area_km2": 900.0,
+    "grid_cell_area_km2": 7.5,
+    "event_center_grid": {
+      "row": 4,
+      "col": 6
+    },
+    "geo_bounds": {
+      "lat_min": 32.9833,
+      "lat_max": 32.9833,
+      "lon_min": 112.5167,
+      "lon_max": 112.5167
+    },
+    "geo_points": [
+      {
+        "lon": 112.5167,
+        "lat": 32.9833
+      }
+    ]
+  },
+  "affected_area_km2": 900.0,
+  "grid_rows": 10,
+  "grid_cols": 12,
+  "grid_count": 120,
+  "grid_cell_area_km2": 7.5
+}

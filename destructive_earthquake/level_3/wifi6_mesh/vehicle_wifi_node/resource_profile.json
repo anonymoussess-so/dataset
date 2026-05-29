@@ -1,0 +1,138 @@
+{
+  "resource_id": "destructive_earthquake_level_3_wifi6_mesh_vehicle_wifi_node",
+  "region": "destructive_earthquake",
+  "region_label": "强破坏地震",
+  "disaster_scenario": "destructive_earthquake",
+  "disaster_label": "强破坏地震",
+  "disaster_type": "earthquake",
+  "disaster_severity": "level_3",
+  "disaster_severity_label": "严重",
+  "disaster_severity_description": "大面积断电、断站或拥塞，蜂窝可用率低，卫星和短波占比上升。",
+  "has_residual_network": false,
+  "scenario_characteristics": [
+    "地震造成基站、传输光缆和供电设施物理损毁，残余公网能力最弱。",
+    "蜂窝链路主要依赖应急车和快速部署小站，早期可用率低、恢复慢。",
+    "卫星、短波和临时 WiFi Mesh 是震后 0-72 小时的关键兜底资源。"
+  ],
+  "communication_type": "WiFi6",
+  "communication_directory": "wifi6_mesh",
+  "communication_label": "WiFi 6 mesh",
+  "base_station_type": "vehicle_wifi_node",
+  "base_station_label": "vehicle-mounted WiFi 6 node",
+  "base_station_role": "Mobile WiFi access around emergency vehicles and moving service points.",
+  "deployment_sample_count": 14,
+  "measurement_periods": [
+    {
+      "measurement_period": "historical",
+      "date_range": "2023-01-01/2023-12-31"
+    },
+    {
+      "measurement_period": "new_collection",
+      "collection_dates": [
+        "2026-04-08",
+        "2026-04-09"
+      ]
+    }
+  ],
+  "cell_user_count": 8,
+  "downlink_bandwidth_mbps": {
+    "min": 3.429,
+    "max": 21.432,
+    "avg": 11.85
+  },
+  "uplink_bandwidth_mbps": {
+    "min": 1.886,
+    "max": 11.788,
+    "avg": 6.518
+  },
+  "mss_bytes": 1360,
+  "connection_success_rate": 0.5416,
+  "connection_failure_rate": 0.4584,
+  "average_business_throughput_mbps": 18.098,
+  "coverage_radius_km": 0.168,
+  "tx_power_watt": 4.32,
+  "connection_attempt_count": 24000,
+  "connection_success_count": 12999,
+  "connection_failure_count": 11001,
+  "deployment_summary": {
+    "physical_station_count": 14,
+    "active_station_count": 3,
+    "degraded_station_count": 5,
+    "offline_station_count": 6,
+    "damaged_station_count": 11,
+    "damage_level_counts": {
+      "minor_damage": 5,
+      "intact": 3,
+      "offline": 6
+    },
+    "total_cell_user_count": 50,
+    "average_cell_user_count": 3.571,
+    "unique_grid_count": 13,
+    "effective_covered_grid_count": 7,
+    "estimated_grid_area_km2": 104.0,
+    "estimated_effective_grid_area_km2": 56.0,
+    "radio_coverage_area_km2_no_overlap_removed": 0.507
+  },
+  "operation_status_summary": {
+    "physical_station_count": 14,
+    "status_counts": {
+      "degraded": 5,
+      "active": 3,
+      "offline": 6
+    },
+    "status_ratio": {
+      "degraded": 0.3571,
+      "active": 0.2143,
+      "offline": 0.4286
+    },
+    "damaged_station_count": 11,
+    "damaged_station_ratio": 0.7857,
+    "offline_station_ratio": 0.4286,
+    "dominant_status": "offline"
+  },
+  "region_grid": {
+    "rows": 5,
+    "cols": 12,
+    "grid_count": 60,
+    "affected_area_km2": 480.0,
+    "coverage_area_km2": 480.0,
+    "grid_cell_area_km2": 8.0,
+    "event_center_grid": {
+      "row": 2,
+      "col": 5
+    },
+    "geo_bounds": {
+      "lat_min": 42.47857642,
+      "lat_max": 42.639272,
+      "lon_min": 126.6789236,
+      "lon_max": 126.9939071
+    },
+    "geo_points": [
+      {
+        "lon": 126.6789236,
+        "lat": 42.55132274
+      },
+      {
+        "lon": 126.8762756,
+        "lat": 42.6001312
+      },
+      {
+        "lon": 126.8972619,
+        "lat": 42.47857642
+      },
+      {
+        "lon": 126.924691,
+        "lat": 42.56627566
+      },
+      {
+        "lon": 126.9939071,
+        "lat": 42.639272
+      }
+    ]
+  },
+  "affected_area_km2": 480.0,
+  "grid_rows": 5,
+  "grid_cols": 12,
+  "grid_count": 60,
+  "grid_cell_area_km2": 8.0
+}

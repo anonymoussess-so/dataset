@@ -1,0 +1,20 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Temporary files
+*.tmp
+~$*
+
+# Local Git setup scratch directories
+_git_store/
+_git_init_test/
