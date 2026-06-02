@@ -24,12 +24,18 @@
   "measurement_periods": [
     {
       "measurement_period": "historical",
-      "date_range": "2023-01-01/2023-12-31"
+      "date_range": "2023-01-01/2025-12-31"
     },
     {
       "measurement_period": "new_collection",
       "collection_dates": [
-        "2026-04-23"
+        "2026-04-20",
+        "2026-04-21",
+        "2026-04-22",
+        "2026-04-23",
+        "2026-04-24",
+        "2026-04-25",
+        "2026-04-26"
       ]
     }
   ],

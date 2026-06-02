@@ -246,7 +246,7 @@ shortwave_hf/
 |---|---|---|
 | `deployment_id` | string | 部署样本唯一标识。 |
 | `measurement_period` | string | 时间批次，取值为 `historical` 或 `new_collection`。 |
-| `collection_date` | string | 采集日期。历史数据为 2023 年日期，新采集数据按灾害场景固定到指定日期。 |
+| `collection_date` | string | 采集日期。历史数据覆盖 2023 年 1 月 1 日至 2025 年 12 月 31 日；新采集数据按灾害场景分布在指定时间范围内。 |
 | `region` | string | 顶层灾害场景名，与 `disaster_scenario` 相同。 |
 | `region_label` | string | 灾害场景中文名。 |
 | `disaster_scenario` | string | 灾害场景英文标识。 |
@@ -323,7 +323,7 @@ connection_failure_count = connection_attempt_count - connection_success_count
 | `user_id` | string | 用户标识。 |
 | `deployment_id` | string | 该业务会话关联的部署样本 ID。 |
 | `measurement_period` | string | 时间批次，取值为 `historical` 或 `new_collection`。 |
-| `collection_date` | string | 采集日期。历史数据为 2023 年日期，新采集数据按灾害场景固定到指定日期。 |
+| `collection_date` | string | 采集日期。历史数据覆盖 2023 年 1 月 1 日至 2025 年 12 月 31 日；新采集数据按灾害场景分布在指定时间范围内。 |
 | `region` | string | 顶层灾害场景名，与 `disaster_scenario` 相同。 |
 | `region_label` | string | 灾害场景中文名。 |
 | `disaster_scenario` | string | 灾害场景英文标识。 |
