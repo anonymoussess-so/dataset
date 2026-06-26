@@ -1,7 +1,7 @@
 {
-  "dataset_name": "Measured Disaster Communication Resource Dataset",
-  "dataset_type": "field_measurement_fusion",
-  "schema_hierarchy": "disaster_scenario(region) -> disaster_severity -> communication_type -> base_station_type -> cell info + business/user sessions",
+  "dataset_name": "Measured Disaster Communication Resource and Demand Dataset",
+  "dataset_type": "field_measurement_fusion_with_demand_collection",
+  "schema_hierarchy": "disaster_scenario(region) -> disaster_severity -> demand units + demand statistics + communication_type -> base_station_type -> cell info + observed business/user sessions",
   "disaster_scenario_count": 3,
   "disaster_severity_count": 4,
   "disaster_severity_levels": {
@@ -459,5 +459,16 @@
     "mss_bytes_avg": 1358.9,
     "tcp_reordering_packets_avg": 35.065,
     "tcp_retrans_packets_avg": 18.242
+  },
+  "demand_model": {
+    "schema_version": "1.0",
+    "schema_file": "demand_schema.json",
+    "data_provenance": "multi_source_field_collection",
+    "event_horizon_hours": 72,
+    "time_slot_minutes": 60,
+    "scenario_severity_slice_count": 12,
+    "demand_unit_count": 16207,
+    "network_unobserved_user_service_instance_count": 186386,
+    "description": "Independent demand-side collection records cover professional users, affected public users, vulnerable users, critical facilities and public-warning tasks. Existing business_users.jsonl files remain network-side observed sessions."
   }
 }

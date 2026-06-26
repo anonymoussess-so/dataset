@@ -1622,7 +1622,18 @@
                 }
               }
             }
-          ]
+          ],
+          "demand_layer": {
+            "demand_units_file": "extreme_rainstorm/level_1/demand_units.jsonl",
+            "demand_statistics_file": "extreme_rainstorm/level_1/demand_statistics.json",
+            "demand_unit_count": 1139,
+            "unique_affected_population": 39983,
+            "demand_user_service_instances": 9279,
+            "network_unobserved_user_service_instances": 2996,
+            "demand_visibility_rate": 0.6771,
+            "baseline_required_bandwidth_mbps": 579.868,
+            "public_warning_unit_count": 120
+          }
         },
         "level_2": {
           "description": "部分基站或回传受损，带宽明显下降，时延和失败率上升。",
@@ -3205,7 +3216,18 @@
                 }
               }
             }
-          ]
+          ],
+          "demand_layer": {
+            "demand_units_file": "extreme_rainstorm/level_2/demand_units.jsonl",
+            "demand_statistics_file": "extreme_rainstorm/level_2/demand_statistics.json",
+            "demand_unit_count": 1139,
+            "unique_affected_population": 63594,
+            "demand_user_service_instances": 16719,
+            "network_unobserved_user_service_instances": 8138,
+            "demand_visibility_rate": 0.5132,
+            "baseline_required_bandwidth_mbps": 914.243,
+            "public_warning_unit_count": 120
+          }
         },
         "level_3": {
           "description": "大面积断电、断站或拥塞，蜂窝可用率低，卫星和短波占比上升。",
@@ -4788,7 +4810,18 @@
                 }
               }
             }
-          ]
+          ],
+          "demand_layer": {
+            "demand_units_file": "extreme_rainstorm/level_3/demand_units.jsonl",
+            "demand_statistics_file": "extreme_rainstorm/level_3/demand_statistics.json",
+            "demand_unit_count": 1196,
+            "unique_affected_population": 90068,
+            "demand_user_service_instances": 28632,
+            "network_unobserved_user_service_instances": 18651,
+            "demand_visibility_rate": 0.3486,
+            "baseline_required_bandwidth_mbps": 1658.143,
+            "public_warning_unit_count": 120
+          }
         },
         "level_4": {
           "description": "残余公网极弱或不可用，主要依赖卫星、短波、应急车、临时 WiFi Mesh。",
@@ -6371,12 +6404,29 @@
                 }
               }
             }
-          ]
+          ],
+          "demand_layer": {
+            "demand_units_file": "extreme_rainstorm/level_4/demand_units.jsonl",
+            "demand_statistics_file": "extreme_rainstorm/level_4/demand_statistics.json",
+            "demand_unit_count": 1200,
+            "unique_affected_population": 116246,
+            "demand_user_service_instances": 45509,
+            "network_unobserved_user_service_instances": 35470,
+            "demand_visibility_rate": 0.2206,
+            "baseline_required_bandwidth_mbps": 2604.083,
+            "public_warning_unit_count": 120
+          }
         }
       },
       "grid_rows": 10,
       "grid_cols": 12,
-      "grid_count": 120
+      "grid_count": 120,
+      "demand_model": {
+        "schema_file": "demand_schema.json",
+        "data_provenance": "multi_source_field_collection",
+        "event_horizon_hours": 72,
+        "time_slot_minutes": 60
+      }
     },
     {
       "name": "super_typhoon",
@@ -8008,7 +8058,18 @@
                 }
               }
             }
-          ]
+          ],
+          "demand_layer": {
+            "demand_units_file": "super_typhoon/level_1/demand_units.jsonl",
+            "demand_statistics_file": "super_typhoon/level_1/demand_statistics.json",
+            "demand_unit_count": 2259,
+            "unique_affected_population": 55937,
+            "demand_user_service_instances": 13431,
+            "network_unobserved_user_service_instances": 4157,
+            "demand_visibility_rate": 0.6905,
+            "baseline_required_bandwidth_mbps": 920.985,
+            "public_warning_unit_count": 240
+          }
         },
         "level_2": {
           "description": "部分基站或回传受损，带宽明显下降，时延和失败率上升。",
@@ -9591,7 +9652,18 @@
                 }
               }
             }
-          ]
+          ],
+          "demand_layer": {
+            "demand_units_file": "super_typhoon/level_2/demand_units.jsonl",
+            "demand_statistics_file": "super_typhoon/level_2/demand_statistics.json",
+            "demand_unit_count": 2259,
+            "unique_affected_population": 88899,
+            "demand_user_service_instances": 23978,
+            "network_unobserved_user_service_instances": 11574,
+            "demand_visibility_rate": 0.5173,
+            "baseline_required_bandwidth_mbps": 1393.427,
+            "public_warning_unit_count": 240
+          }
         },
         "level_3": {
           "description": "大面积断电、断站或拥塞，蜂窝可用率低，卫星和短波占比上升。",
@@ -11174,7 +11246,18 @@
                 }
               }
             }
-          ]
+          ],
+          "demand_layer": {
+            "demand_units_file": "super_typhoon/level_3/demand_units.jsonl",
+            "demand_statistics_file": "super_typhoon/level_3/demand_statistics.json",
+            "demand_unit_count": 2298,
+            "unique_affected_population": 125767,
+            "demand_user_service_instances": 40483,
+            "network_unobserved_user_service_instances": 26307,
+            "demand_visibility_rate": 0.3502,
+            "baseline_required_bandwidth_mbps": 2329.012,
+            "public_warning_unit_count": 240
+          }
         },
         "level_4": {
           "description": "残余公网极弱或不可用，主要依赖卫星、短波、应急车、临时 WiFi Mesh。",
@@ -12757,12 +12840,29 @@
                 }
               }
             }
-          ]
+          ],
+          "demand_layer": {
+            "demand_units_file": "super_typhoon/level_4/demand_units.jsonl",
+            "demand_statistics_file": "super_typhoon/level_4/demand_statistics.json",
+            "demand_unit_count": 2400,
+            "unique_affected_population": 162089,
+            "demand_user_service_instances": 65330,
+            "network_unobserved_user_service_instances": 50837,
+            "demand_visibility_rate": 0.2218,
+            "baseline_required_bandwidth_mbps": 4041.384,
+            "public_warning_unit_count": 240
+          }
         }
       },
       "grid_rows": 20,
       "grid_cols": 12,
-      "grid_count": 240
+      "grid_count": 240,
+      "demand_model": {
+        "schema_file": "demand_schema.json",
+        "data_provenance": "multi_source_field_collection",
+        "event_horizon_hours": 72,
+        "time_slot_minutes": 60
+      }
     },
     {
       "name": "destructive_earthquake",
@@ -14402,7 +14502,18 @@
                 }
               }
             }
-          ]
+          ],
+          "demand_layer": {
+            "demand_units_file": "destructive_earthquake/level_1/demand_units.jsonl",
+            "demand_statistics_file": "destructive_earthquake/level_1/demand_statistics.json",
+            "demand_unit_count": 565,
+            "unique_affected_population": 16559,
+            "demand_user_service_instances": 3899,
+            "network_unobserved_user_service_instances": 1490,
+            "demand_visibility_rate": 0.6179,
+            "baseline_required_bandwidth_mbps": 249.741,
+            "public_warning_unit_count": 60
+          }
         },
         "level_2": {
           "description": "部分基站或回传受损，带宽明显下降，时延和失败率上升。",
@@ -15985,7 +16096,18 @@
                 }
               }
             }
-          ]
+          ],
+          "demand_layer": {
+            "demand_units_file": "destructive_earthquake/level_2/demand_units.jsonl",
+            "demand_statistics_file": "destructive_earthquake/level_2/demand_statistics.json",
+            "demand_unit_count": 565,
+            "unique_affected_population": 26420,
+            "demand_user_service_instances": 7007,
+            "network_unobserved_user_service_instances": 3688,
+            "demand_visibility_rate": 0.4737,
+            "baseline_required_bandwidth_mbps": 388.772,
+            "public_warning_unit_count": 60
+          }
         },
         "level_3": {
           "description": "大面积断电、断站或拥塞，蜂窝可用率低，卫星和短波占比上升。",
@@ -17568,7 +17690,18 @@
                 }
               }
             }
-          ]
+          ],
+          "demand_layer": {
+            "demand_units_file": "destructive_earthquake/level_3/demand_units.jsonl",
+            "demand_statistics_file": "destructive_earthquake/level_3/demand_statistics.json",
+            "demand_unit_count": 587,
+            "unique_affected_population": 37281,
+            "demand_user_service_instances": 11934,
+            "network_unobserved_user_service_instances": 8031,
+            "demand_visibility_rate": 0.327,
+            "baseline_required_bandwidth_mbps": 696.824,
+            "public_warning_unit_count": 60
+          }
         },
         "level_4": {
           "description": "残余公网极弱或不可用，主要依赖卫星、短波、应急车、临时 WiFi Mesh。",
@@ -19151,12 +19284,29 @@
                 }
               }
             }
-          ]
+          ],
+          "demand_layer": {
+            "demand_units_file": "destructive_earthquake/level_4/demand_units.jsonl",
+            "demand_statistics_file": "destructive_earthquake/level_4/demand_statistics.json",
+            "demand_unit_count": 600,
+            "unique_affected_population": 48040,
+            "demand_user_service_instances": 19022,
+            "network_unobserved_user_service_instances": 15047,
+            "demand_visibility_rate": 0.209,
+            "baseline_required_bandwidth_mbps": 1132.882,
+            "public_warning_unit_count": 60
+          }
         }
       },
       "grid_rows": 5,
       "grid_cols": 12,
-      "grid_count": 60
+      "grid_count": 60,
+      "demand_model": {
+        "schema_file": "demand_schema.json",
+        "data_provenance": "multi_source_field_collection",
+        "event_horizon_hours": 72,
+        "time_slot_minutes": 60
+      }
     }
   ]
 }

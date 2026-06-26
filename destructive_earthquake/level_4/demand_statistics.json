@@ -1,0 +1,1373 @@
+{
+  "schema_version": "1.0",
+  "data_provenance": "multi_source_field_collection",
+  "disaster_scenario": "destructive_earthquake",
+  "disaster_severity": "level_4",
+  "event_id": "EQ_20260216_LEVEL_4",
+  "event_horizon_hours": 72,
+  "time_slot_minutes": 60,
+  "demand_units_file": "demand_units.jsonl",
+  "summary": {
+    "unique_affected_population": 48040,
+    "demand_unit_count": 600,
+    "public_warning_unit_count": 60,
+    "target_broadcast_population": 64990,
+    "demand_user_service_instances": 19022,
+    "network_observed_user_service_instances": 3975,
+    "network_unobserved_user_service_instances": 15047,
+    "baseline_required_bandwidth_mbps": 1132.882,
+    "peak_required_bandwidth_mbps": 1876.6434,
+    "demand_visibility_rate": 0.209
+  },
+  "by_demand_object_type": {
+    "affected_public": {
+      "demand_unit_count": 240,
+      "public_warning_unit_count": 0,
+      "target_broadcast_population": 0,
+      "demand_user_service_instances": 14320,
+      "network_observed_user_service_instances": 2655,
+      "network_unobserved_user_service_instances": 11665,
+      "baseline_required_bandwidth_mbps": 460.137,
+      "peak_required_bandwidth_mbps": 701.2234,
+      "demand_visibility_rate": 0.1854
+    },
+    "critical_facility": {
+      "demand_unit_count": 60,
+      "public_warning_unit_count": 0,
+      "target_broadcast_population": 0,
+      "demand_user_service_instances": 670,
+      "network_observed_user_service_instances": 188,
+      "network_unobserved_user_service_instances": 482,
+      "baseline_required_bandwidth_mbps": 234.5,
+      "peak_required_bandwidth_mbps": 422.1,
+      "demand_visibility_rate": 0.2806
+    },
+    "public_warning_task": {
+      "demand_unit_count": 60,
+      "public_warning_unit_count": 60,
+      "target_broadcast_population": 64990,
+      "demand_user_service_instances": 0,
+      "network_observed_user_service_instances": 0,
+      "network_unobserved_user_service_instances": 0,
+      "baseline_required_bandwidth_mbps": 0.0,
+      "peak_required_bandwidth_mbps": 0.0,
+      "demand_visibility_rate": 0.0
+    },
+    "rescue_personnel": {
+      "demand_unit_count": 180,
+      "public_warning_unit_count": 0,
+      "target_broadcast_population": 0,
+      "demand_user_service_instances": 3229,
+      "network_observed_user_service_instances": 983,
+      "network_unobserved_user_service_instances": 2246,
+      "baseline_required_bandwidth_mbps": 418.17,
+      "peak_required_bandwidth_mbps": 721.2,
+      "demand_visibility_rate": 0.3044
+    },
+    "vulnerable_public": {
+      "demand_unit_count": 60,
+      "public_warning_unit_count": 0,
+      "target_broadcast_population": 0,
+      "demand_user_service_instances": 803,
+      "network_observed_user_service_instances": 149,
+      "network_unobserved_user_service_instances": 654,
+      "baseline_required_bandwidth_mbps": 20.075,
+      "peak_required_bandwidth_mbps": 32.12,
+      "demand_visibility_rate": 0.1856
+    }
+  },
+  "by_service_type": {
+    "basic_internet": {
+      "demand_unit_count": 60,
+      "public_warning_unit_count": 0,
+      "target_broadcast_population": 0,
+      "demand_user_service_instances": 4180,
+      "network_observed_user_service_instances": 774,
+      "network_unobserved_user_service_instances": 3406,
+      "baseline_required_bandwidth_mbps": 376.2,
+      "peak_required_bandwidth_mbps": 564.3,
+      "demand_visibility_rate": 0.1852
+    },
+    "disaster_warning": {
+      "demand_unit_count": 60,
+      "public_warning_unit_count": 60,
+      "target_broadcast_population": 64990,
+      "demand_user_service_instances": 0,
+      "network_observed_user_service_instances": 0,
+      "network_unobserved_user_service_instances": 0,
+      "baseline_required_bandwidth_mbps": 0.0,
+      "peak_required_bandwidth_mbps": 0.0,
+      "demand_visibility_rate": 0.0
+    },
+    "dispatch_data": {
+      "demand_unit_count": 60,
+      "public_warning_unit_count": 0,
+      "target_broadcast_population": 0,
+      "demand_user_service_instances": 1335,
+      "network_observed_user_service_instances": 404,
+      "network_unobserved_user_service_instances": 931,
+      "baseline_required_bandwidth_mbps": 16.02,
+      "peak_required_bandwidth_mbps": 24.03,
+      "demand_visibility_rate": 0.3026
+    },
+    "emergency_call": {
+      "demand_unit_count": 60,
+      "public_warning_unit_count": 0,
+      "target_broadcast_population": 0,
+      "demand_user_service_instances": 2402,
+      "network_observed_user_service_instances": 445,
+      "network_unobserved_user_service_instances": 1957,
+      "baseline_required_bandwidth_mbps": 60.05,
+      "peak_required_bandwidth_mbps": 96.08,
+      "demand_visibility_rate": 0.1853
+    },
+    "facility_coordination": {
+      "demand_unit_count": 60,
+      "public_warning_unit_count": 0,
+      "target_broadcast_population": 0,
+      "demand_user_service_instances": 670,
+      "network_observed_user_service_instances": 188,
+      "network_unobserved_user_service_instances": 482,
+      "baseline_required_bandwidth_mbps": 234.5,
+      "peak_required_bandwidth_mbps": 422.1,
+      "demand_visibility_rate": 0.2806
+    },
+    "image_upload": {
+      "demand_unit_count": 60,
+      "public_warning_unit_count": 0,
+      "target_broadcast_population": 0,
+      "demand_user_service_instances": 559,
+      "network_observed_user_service_instances": 175,
+      "network_unobserved_user_service_instances": 384,
+      "baseline_required_bandwidth_mbps": 335.4,
+      "peak_required_bandwidth_mbps": 603.72,
+      "demand_visibility_rate": 0.3131
+    },
+    "mission_critical_voice": {
+      "demand_unit_count": 60,
+      "public_warning_unit_count": 0,
+      "target_broadcast_population": 0,
+      "demand_user_service_instances": 1335,
+      "network_observed_user_service_instances": 404,
+      "network_unobserved_user_service_instances": 931,
+      "baseline_required_bandwidth_mbps": 66.75,
+      "peak_required_bandwidth_mbps": 93.45,
+      "demand_visibility_rate": 0.3026
+    },
+    "safety_confirmation": {
+      "demand_unit_count": 60,
+      "public_warning_unit_count": 0,
+      "target_broadcast_population": 0,
+      "demand_user_service_instances": 5383,
+      "network_observed_user_service_instances": 1001,
+      "network_unobserved_user_service_instances": 4382,
+      "baseline_required_bandwidth_mbps": 21.532,
+      "peak_required_bandwidth_mbps": 36.6044,
+      "demand_visibility_rate": 0.186
+    },
+    "sos_message": {
+      "demand_unit_count": 60,
+      "public_warning_unit_count": 0,
+      "target_broadcast_population": 0,
+      "demand_user_service_instances": 2355,
+      "network_observed_user_service_instances": 435,
+      "network_unobserved_user_service_instances": 1920,
+      "baseline_required_bandwidth_mbps": 2.355,
+      "peak_required_bandwidth_mbps": 4.239,
+      "demand_visibility_rate": 0.1847
+    },
+    "vulnerable_emergency_call": {
+      "demand_unit_count": 60,
+      "public_warning_unit_count": 0,
+      "target_broadcast_population": 0,
+      "demand_user_service_instances": 803,
+      "network_observed_user_service_instances": 149,
+      "network_unobserved_user_service_instances": 654,
+      "baseline_required_bandwidth_mbps": 20.075,
+      "peak_required_bandwidth_mbps": 32.12,
+      "demand_visibility_rate": 0.1856
+    }
+  },
+  "by_priority_level": {
+    "1": {
+      "demand_unit_count": 420,
+      "public_warning_unit_count": 60,
+      "target_broadcast_population": 64990,
+      "demand_user_service_instances": 8900,
+      "network_observed_user_service_instances": 2025,
+      "network_unobserved_user_service_instances": 6875,
+      "baseline_required_bandwidth_mbps": 399.75,
+      "peak_required_bandwidth_mbps": 672.019,
+      "demand_visibility_rate": 0.2275
+    },
+    "2": {
+      "demand_unit_count": 120,
+      "public_warning_unit_count": 0,
+      "target_broadcast_population": 0,
+      "demand_user_service_instances": 5942,
+      "network_observed_user_service_instances": 1176,
+      "network_unobserved_user_service_instances": 4766,
+      "baseline_required_bandwidth_mbps": 356.932,
+      "peak_required_bandwidth_mbps": 640.3244,
+      "demand_visibility_rate": 0.1979
+    },
+    "5": {
+      "demand_unit_count": 60,
+      "public_warning_unit_count": 0,
+      "target_broadcast_population": 0,
+      "demand_user_service_instances": 4180,
+      "network_observed_user_service_instances": 774,
+      "network_unobserved_user_service_instances": 3406,
+      "baseline_required_bandwidth_mbps": 376.2,
+      "peak_required_bandwidth_mbps": 564.3,
+      "demand_visibility_rate": 0.1852
+    }
+  },
+  "by_grid": [
+    {
+      "grid_position": {
+        "row": 0,
+        "col": 0
+      },
+      "affected_population": 902,
+      "trapped_population": 64,
+      "rescue_personnel_count": 22,
+      "critical_facility_count": 1,
+      "demand_unit_count": 10,
+      "public_warning_unit_count": 1,
+      "target_broadcast_population": 1199,
+      "demand_user_service_instances": 340,
+      "network_observed_user_service_instances": 77,
+      "network_unobserved_user_service_instances": 263,
+      "baseline_required_bandwidth_mbps": 19.178,
+      "peak_required_bandwidth_mbps": 31.5648,
+      "demand_visibility_rate": 0.2265
+    },
+    {
+      "grid_position": {
+        "row": 0,
+        "col": 1
+      },
+      "affected_population": 662,
+      "trapped_population": 50,
+      "rescue_personnel_count": 18,
+      "critical_facility_count": 1,
+      "demand_unit_count": 10,
+      "public_warning_unit_count": 1,
+      "target_broadcast_population": 888,
+      "demand_user_service_instances": 260,
+      "network_observed_user_service_instances": 57,
+      "network_unobserved_user_service_instances": 203,
+      "baseline_required_bandwidth_mbps": 16.038,
+      "peak_required_bandwidth_mbps": 26.633,
+      "demand_visibility_rate": 0.2192
+    },
+    {
+      "grid_position": {
+        "row": 0,
+        "col": 2
+      },
+      "affected_population": 852,
+      "trapped_population": 66,
+      "rescue_personnel_count": 23,
+      "critical_facility_count": 1,
+      "demand_unit_count": 10,
+      "public_warning_unit_count": 1,
+      "target_broadcast_population": 1150,
+      "demand_user_service_instances": 333,
+      "network_observed_user_service_instances": 71,
+      "network_unobserved_user_service_instances": 262,
+      "baseline_required_bandwidth_mbps": 19.432,
+      "peak_required_bandwidth_mbps": 32.1138,
+      "demand_visibility_rate": 0.2132
+    },
+    {
+      "grid_position": {
+        "row": 0,
+        "col": 3
+      },
+      "affected_population": 925,
+      "trapped_population": 77,
+      "rescue_personnel_count": 27,
+      "critical_facility_count": 1,
+      "demand_unit_count": 10,
+      "public_warning_unit_count": 1,
+      "target_broadcast_population": 1263,
+      "demand_user_service_instances": 366,
+      "network_observed_user_service_instances": 72,
+      "network_unobserved_user_service_instances": 294,
+      "baseline_required_bandwidth_mbps": 20.937,
+      "peak_required_bandwidth_mbps": 34.5478,
+      "demand_visibility_rate": 0.1967
+    },
+    {
+      "grid_position": {
+        "row": 0,
+        "col": 4
+      },
+      "affected_population": 684,
+      "trapped_population": 58,
+      "rescue_personnel_count": 21,
+      "critical_facility_count": 1,
+      "demand_unit_count": 10,
+      "public_warning_unit_count": 1,
+      "target_broadcast_population": 937,
+      "demand_user_service_instances": 281,
+      "network_observed_user_service_instances": 55,
+      "network_unobserved_user_service_instances": 226,
+      "baseline_required_bandwidth_mbps": 17.121,
+      "peak_required_bandwidth_mbps": 28.4364,
+      "demand_visibility_rate": 0.1957
+    },
+    {
+      "grid_position": {
+        "row": 0,
+        "col": 5
+      },
+      "affected_population": 962,
+      "trapped_population": 81,
+      "rescue_personnel_count": 28,
+      "critical_facility_count": 1,
+      "demand_unit_count": 10,
+      "public_warning_unit_count": 1,
+      "target_broadcast_population": 1318,
+      "demand_user_service_instances": 383,
+      "network_observed_user_service_instances": 75,
+      "network_unobserved_user_service_instances": 308,
+      "baseline_required_bandwidth_mbps": 22.053,
+      "peak_required_bandwidth_mbps": 36.4084,
+      "demand_visibility_rate": 0.1958
+    },
+    {
+      "grid_position": {
+        "row": 0,
+        "col": 6
+      },
+      "affected_population": 992,
+      "trapped_population": 82,
+      "rescue_personnel_count": 28,
+      "critical_facility_count": 1,
+      "demand_unit_count": 10,
+      "public_warning_unit_count": 1,
+      "target_broadcast_population": 1352,
+      "demand_user_service_instances": 393,
+      "network_observed_user_service_instances": 79,
+      "network_unobserved_user_service_instances": 314,
+      "baseline_required_bandwidth_mbps": 22.346,
+      "peak_required_bandwidth_mbps": 36.8606,
+      "demand_visibility_rate": 0.201
+    },
+    {
+      "grid_position": {
+        "row": 0,
+        "col": 7
+      },
+      "affected_population": 670,
+      "trapped_population": 54,
+      "rescue_personnel_count": 20,
+      "critical_facility_count": 1,
+      "demand_unit_count": 10,
+      "public_warning_unit_count": 1,
+      "target_broadcast_population": 911,
+      "demand_user_service_instances": 270,
+      "network_observed_user_service_instances": 55,
+      "network_unobserved_user_service_instances": 215,
+      "baseline_required_bandwidth_mbps": 16.243,
+      "peak_required_bandwidth_mbps": 26.9394,
+      "demand_visibility_rate": 0.2037
+    },
+    {
+      "grid_position": {
+        "row": 0,
+        "col": 8
+      },
+      "affected_population": 815,
+      "trapped_population": 64,
+      "rescue_personnel_count": 22,
+      "critical_facility_count": 1,
+      "demand_unit_count": 10,
+      "public_warning_unit_count": 1,
+      "target_broadcast_population": 1102,
+      "demand_user_service_instances": 320,
+      "network_observed_user_service_instances": 68,
+      "network_unobserved_user_service_instances": 252,
+      "baseline_required_bandwidth_mbps": 18.433,
+      "peak_required_bandwidth_mbps": 30.4318,
+      "demand_visibility_rate": 0.2125
+    },
+    {
+      "grid_position": {
+        "row": 0,
+        "col": 9
+      },
+      "affected_population": 718,
+      "trapped_population": 52,
+      "rescue_personnel_count": 18,
+      "critical_facility_count": 1,
+      "demand_unit_count": 10,
+      "public_warning_unit_count": 1,
+      "target_broadcast_population": 957,
+      "demand_user_service_instances": 277,
+      "network_observed_user_service_instances": 62,
+      "network_unobserved_user_service_instances": 215,
+      "baseline_required_bandwidth_mbps": 16.549,
+      "peak_required_bandwidth_mbps": 27.4174,
+      "demand_visibility_rate": 0.2238
+    },
+    {
+      "grid_position": {
+        "row": 0,
+        "col": 10
+      },
+      "affected_population": 589,
+      "trapped_population": 41,
+      "rescue_personnel_count": 15,
+      "critical_facility_count": 1,
+      "demand_unit_count": 10,
+      "public_warning_unit_count": 1,
+      "target_broadcast_population": 781,
+      "demand_user_service_instances": 227,
+      "network_observed_user_service_instances": 53,
+      "network_unobserved_user_service_instances": 174,
+      "baseline_required_bandwidth_mbps": 13.86,
+      "peak_required_bandwidth_mbps": 23.0006,
+      "demand_visibility_rate": 0.2335
+    },
+    {
+      "grid_position": {
+        "row": 0,
+        "col": 11
+      },
+      "affected_population": 703,
+      "trapped_population": 46,
+      "rescue_personnel_count": 16,
+      "critical_facility_count": 1,
+      "demand_unit_count": 10,
+      "public_warning_unit_count": 1,
+      "target_broadcast_population": 922,
+      "demand_user_service_instances": 267,
+      "network_observed_user_service_instances": 63,
+      "network_unobserved_user_service_instances": 204,
+      "baseline_required_bandwidth_mbps": 15.728,
+      "peak_required_bandwidth_mbps": 26.0142,
+      "demand_visibility_rate": 0.236
+    },
+    {
+      "grid_position": {
+        "row": 1,
+        "col": 0
+      },
+      "affected_population": 925,
+      "trapped_population": 67,
+      "rescue_personnel_count": 23,
+      "critical_facility_count": 1,
+      "demand_unit_count": 10,
+      "public_warning_unit_count": 1,
+      "target_broadcast_population": 1232,
+      "demand_user_service_instances": 355,
+      "network_observed_user_service_instances": 77,
+      "network_unobserved_user_service_instances": 278,
+      "baseline_required_bandwidth_mbps": 20.159,
+      "peak_required_bandwidth_mbps": 33.2268,
+      "demand_visibility_rate": 0.2169
+    },
+    {
+      "grid_position": {
+        "row": 1,
+        "col": 1
+      },
+      "affected_population": 878,
+      "trapped_population": 67,
+      "rescue_personnel_count": 23,
+      "critical_facility_count": 1,
+      "demand_unit_count": 10,
+      "public_warning_unit_count": 1,
+      "target_broadcast_population": 1181,
+      "demand_user_service_instances": 342,
+      "network_observed_user_service_instances": 73,
+      "network_unobserved_user_service_instances": 269,
+      "baseline_required_bandwidth_mbps": 19.7,
+      "peak_required_bandwidth_mbps": 32.526,
+      "demand_visibility_rate": 0.2135
+    },
+    {
+      "grid_position": {
+        "row": 1,
+        "col": 2
+      },
+      "affected_population": 952,
+      "trapped_population": 76,
+      "rescue_personnel_count": 26,
+      "critical_facility_count": 1,
+      "demand_unit_count": 10,
+      "public_warning_unit_count": 1,
+      "target_broadcast_population": 1289,
+      "demand_user_service_instances": 375,
+      "network_observed_user_service_instances": 78,
+      "network_unobserved_user_service_instances": 297,
+      "baseline_required_bandwidth_mbps": 21.282,
+      "peak_required_bandwidth_mbps": 35.0852,
+      "demand_visibility_rate": 0.208
+    },
+    {
+      "grid_position": {
+        "row": 1,
+        "col": 3
+      },
+      "affected_population": 960,
+      "trapped_population": 80,
+      "rescue_personnel_count": 28,
+      "critical_facility_count": 1,
+      "demand_unit_count": 10,
+      "public_warning_unit_count": 1,
+      "target_broadcast_population": 1312,
+      "demand_user_service_instances": 384,
+      "network_observed_user_service_instances": 77,
+      "network_unobserved_user_service_instances": 307,
+      "baseline_required_bandwidth_mbps": 22.102,
+      "peak_required_bandwidth_mbps": 36.4866,
+      "demand_visibility_rate": 0.2005
+    },
+    {
+      "grid_position": {
+        "row": 1,
+        "col": 4
+      },
+      "affected_population": 709,
+      "trapped_population": 62,
+      "rescue_personnel_count": 23,
+      "critical_facility_count": 1,
+      "demand_unit_count": 10,
+      "public_warning_unit_count": 1,
+      "target_broadcast_population": 978,
+      "demand_user_service_instances": 292,
+      "network_observed_user_service_instances": 56,
+      "network_unobserved_user_service_instances": 236,
+      "baseline_required_bandwidth_mbps": 18.035,
+      "peak_required_bandwidth_mbps": 29.9796,
+      "demand_visibility_rate": 0.1918
+    },
+    {
+      "grid_position": {
+        "row": 1,
+        "col": 5
+      },
+      "affected_population": 871,
+      "trapped_population": 80,
+      "rescue_personnel_count": 28,
+      "critical_facility_count": 2,
+      "demand_unit_count": 10,
+      "public_warning_unit_count": 1,
+      "target_broadcast_population": 1213,
+      "demand_user_service_instances": 370,
+      "network_observed_user_service_instances": 68,
+      "network_unobserved_user_service_instances": 302,
+      "baseline_required_bandwidth_mbps": 24.692,
+      "peak_required_bandwidth_mbps": 41.3986,
+      "demand_visibility_rate": 0.1838
+    },
+    {
+      "grid_position": {
+        "row": 1,
+        "col": 6
+      },
+      "affected_population": 761,
+      "trapped_population": 66,
+      "rescue_personnel_count": 24,
+      "critical_facility_count": 2,
+      "demand_unit_count": 10,
+      "public_warning_unit_count": 1,
+      "target_broadcast_population": 1048,
+      "demand_user_service_instances": 321,
+      "network_observed_user_service_instances": 62,
+      "network_unobserved_user_service_instances": 259,
+      "baseline_required_bandwidth_mbps": 22.108,
+      "peak_required_bandwidth_mbps": 37.152,
+      "demand_visibility_rate": 0.1931
+    },
+    {
+      "grid_position": {
+        "row": 1,
+        "col": 7
+      },
+      "affected_population": 769,
+      "trapped_population": 64,
+      "rescue_personnel_count": 23,
+      "critical_facility_count": 1,
+      "demand_unit_count": 10,
+      "public_warning_unit_count": 1,
+      "target_broadcast_population": 1050,
+      "demand_user_service_instances": 310,
+      "network_observed_user_service_instances": 63,
+      "network_unobserved_user_service_instances": 247,
+      "baseline_required_bandwidth_mbps": 18.639,
+      "peak_required_bandwidth_mbps": 30.904,
+      "demand_visibility_rate": 0.2032
+    },
+    {
+      "grid_position": {
+        "row": 1,
+        "col": 8
+      },
+      "affected_population": 663,
+      "trapped_population": 53,
+      "rescue_personnel_count": 19,
+      "critical_facility_count": 1,
+      "demand_unit_count": 10,
+      "public_warning_unit_count": 1,
+      "target_broadcast_population": 898,
+      "demand_user_service_instances": 265,
+      "network_observed_user_service_instances": 56,
+      "network_unobserved_user_service_instances": 209,
+      "baseline_required_bandwidth_mbps": 16.127,
+      "peak_required_bandwidth_mbps": 26.7646,
+      "demand_visibility_rate": 0.2113
+    },
+    {
+      "grid_position": {
+        "row": 1,
+        "col": 9
+      },
+      "affected_population": 744,
+      "trapped_population": 56,
+      "rescue_personnel_count": 20,
+      "critical_facility_count": 1,
+      "demand_unit_count": 10,
+      "public_warning_unit_count": 1,
+      "target_broadcast_population": 999,
+      "demand_user_service_instances": 292,
+      "network_observed_user_service_instances": 64,
+      "network_unobserved_user_service_instances": 228,
+      "baseline_required_bandwidth_mbps": 17.032,
+      "peak_required_bandwidth_mbps": 28.1424,
+      "demand_visibility_rate": 0.2192
+    },
+    {
+      "grid_position": {
+        "row": 1,
+        "col": 10
+      },
+      "affected_population": 819,
+      "trapped_population": 57,
+      "rescue_personnel_count": 20,
+      "critical_facility_count": 1,
+      "demand_unit_count": 10,
+      "public_warning_unit_count": 1,
+      "target_broadcast_population": 1086,
+      "demand_user_service_instances": 310,
+      "network_observed_user_service_instances": 71,
+      "network_unobserved_user_service_instances": 239,
+      "baseline_required_bandwidth_mbps": 17.659,
+      "peak_required_bandwidth_mbps": 29.0954,
+      "demand_visibility_rate": 0.229
+    },
+    {
+      "grid_position": {
+        "row": 1,
+        "col": 11
+      },
+      "affected_population": 583,
+      "trapped_population": 39,
+      "rescue_personnel_count": 14,
+      "critical_facility_count": 1,
+      "demand_unit_count": 10,
+      "public_warning_unit_count": 1,
+      "target_broadcast_population": 767,
+      "demand_user_service_instances": 223,
+      "network_observed_user_service_instances": 53,
+      "network_unobserved_user_service_instances": 170,
+      "baseline_required_bandwidth_mbps": 13.793,
+      "peak_required_bandwidth_mbps": 22.904,
+      "demand_visibility_rate": 0.2377
+    },
+    {
+      "grid_position": {
+        "row": 2,
+        "col": 0
+      },
+      "affected_population": 881,
+      "trapped_population": 64,
+      "rescue_personnel_count": 22,
+      "critical_facility_count": 1,
+      "demand_unit_count": 10,
+      "public_warning_unit_count": 1,
+      "target_broadcast_population": 1175,
+      "demand_user_service_instances": 336,
+      "network_observed_user_service_instances": 75,
+      "network_unobserved_user_service_instances": 261,
+      "baseline_required_bandwidth_mbps": 19.055,
+      "peak_required_bandwidth_mbps": 31.3762,
+      "demand_visibility_rate": 0.2232
+    },
+    {
+      "grid_position": {
+        "row": 2,
+        "col": 1
+      },
+      "affected_population": 818,
+      "trapped_population": 61,
+      "rescue_personnel_count": 21,
+      "critical_facility_count": 1,
+      "demand_unit_count": 10,
+      "public_warning_unit_count": 1,
+      "target_broadcast_population": 1096,
+      "demand_user_service_instances": 317,
+      "network_observed_user_service_instances": 70,
+      "network_unobserved_user_service_instances": 247,
+      "baseline_required_bandwidth_mbps": 18.373,
+      "peak_required_bandwidth_mbps": 30.347,
+      "demand_visibility_rate": 0.2208
+    },
+    {
+      "grid_position": {
+        "row": 2,
+        "col": 2
+      },
+      "affected_population": 752,
+      "trapped_population": 60,
+      "rescue_personnel_count": 21,
+      "critical_facility_count": 1,
+      "demand_unit_count": 10,
+      "public_warning_unit_count": 1,
+      "target_broadcast_population": 1018,
+      "demand_user_service_instances": 296,
+      "network_observed_user_service_instances": 62,
+      "network_unobserved_user_service_instances": 234,
+      "baseline_required_bandwidth_mbps": 17.65,
+      "peak_required_bandwidth_mbps": 29.2408,
+      "demand_visibility_rate": 0.2095
+    },
+    {
+      "grid_position": {
+        "row": 2,
+        "col": 3
+      },
+      "affected_population": 697,
+      "trapped_population": 60,
+      "rescue_personnel_count": 22,
+      "critical_facility_count": 2,
+      "demand_unit_count": 10,
+      "public_warning_unit_count": 1,
+      "target_broadcast_population": 958,
+      "demand_user_service_instances": 296,
+      "network_observed_user_service_instances": 57,
+      "network_unobserved_user_service_instances": 239,
+      "baseline_required_bandwidth_mbps": 20.778,
+      "peak_required_bandwidth_mbps": 34.968,
+      "demand_visibility_rate": 0.1926
+    },
+    {
+      "grid_position": {
+        "row": 2,
+        "col": 4
+      },
+      "affected_population": 778,
+      "trapped_population": 69,
+      "rescue_personnel_count": 25,
+      "critical_facility_count": 1,
+      "demand_unit_count": 10,
+      "public_warning_unit_count": 1,
+      "target_broadcast_population": 1076,
+      "demand_user_service_instances": 319,
+      "network_observed_user_service_instances": 59,
+      "network_unobserved_user_service_instances": 260,
+      "baseline_required_bandwidth_mbps": 18.86,
+      "peak_required_bandwidth_mbps": 31.2272,
+      "demand_visibility_rate": 0.185
+    },
+    {
+      "grid_position": {
+        "row": 2,
+        "col": 5
+      },
+      "affected_population": 1016,
+      "trapped_population": 96,
+      "rescue_personnel_count": 33,
+      "critical_facility_count": 1,
+      "demand_unit_count": 10,
+      "public_warning_unit_count": 1,
+      "target_broadcast_population": 1423,
+      "demand_user_service_instances": 419,
+      "network_observed_user_service_instances": 74,
+      "network_unobserved_user_service_instances": 345,
+      "baseline_required_bandwidth_mbps": 24.105,
+      "peak_required_bandwidth_mbps": 39.8436,
+      "demand_visibility_rate": 0.1766
+    },
+    {
+      "grid_position": {
+        "row": 2,
+        "col": 6
+      },
+      "affected_population": 729,
+      "trapped_population": 64,
+      "rescue_personnel_count": 23,
+      "critical_facility_count": 1,
+      "demand_unit_count": 10,
+      "public_warning_unit_count": 1,
+      "target_broadcast_population": 1007,
+      "demand_user_service_instances": 298,
+      "network_observed_user_service_instances": 56,
+      "network_unobserved_user_service_instances": 242,
+      "baseline_required_bandwidth_mbps": 18.163,
+      "peak_required_bandwidth_mbps": 30.1768,
+      "demand_visibility_rate": 0.1879
+    },
+    {
+      "grid_position": {
+        "row": 2,
+        "col": 7
+      },
+      "affected_population": 847,
+      "trapped_population": 71,
+      "rescue_personnel_count": 25,
+      "critical_facility_count": 1,
+      "demand_unit_count": 10,
+      "public_warning_unit_count": 1,
+      "target_broadcast_population": 1158,
+      "demand_user_service_instances": 339,
+      "network_observed_user_service_instances": 67,
+      "network_unobserved_user_service_instances": 272,
+      "baseline_required_bandwidth_mbps": 19.534,
+      "peak_required_bandwidth_mbps": 32.2552,
+      "demand_visibility_rate": 0.1976
+    },
+    {
+      "grid_position": {
+        "row": 2,
+        "col": 8
+      },
+      "affected_population": 868,
+      "trapped_population": 70,
+      "rescue_personnel_count": 24,
+      "critical_facility_count": 1,
+      "demand_unit_count": 10,
+      "public_warning_unit_count": 1,
+      "target_broadcast_population": 1178,
+      "demand_user_service_instances": 341,
+      "network_observed_user_service_instances": 71,
+      "network_unobserved_user_service_instances": 270,
+      "baseline_required_bandwidth_mbps": 19.684,
+      "peak_required_bandwidth_mbps": 32.489,
+      "demand_visibility_rate": 0.2082
+    },
+    {
+      "grid_position": {
+        "row": 2,
+        "col": 9
+      },
+      "affected_population": 691,
+      "trapped_population": 53,
+      "rescue_personnel_count": 19,
+      "critical_facility_count": 1,
+      "demand_unit_count": 10,
+      "public_warning_unit_count": 1,
+      "target_broadcast_population": 929,
+      "demand_user_service_instances": 272,
+      "network_observed_user_service_instances": 59,
+      "network_unobserved_user_service_instances": 213,
+      "baseline_required_bandwidth_mbps": 16.369,
+      "peak_required_bandwidth_mbps": 27.135,
+      "demand_visibility_rate": 0.2169
+    },
+    {
+      "grid_position": {
+        "row": 2,
+        "col": 10
+      },
+      "affected_population": 835,
+      "trapped_population": 60,
+      "rescue_personnel_count": 21,
+      "critical_facility_count": 1,
+      "demand_unit_count": 10,
+      "public_warning_unit_count": 1,
+      "target_broadcast_population": 1111,
+      "demand_user_service_instances": 322,
+      "network_observed_user_service_instances": 74,
+      "network_unobserved_user_service_instances": 248,
+      "baseline_required_bandwidth_mbps": 18.586,
+      "peak_required_bandwidth_mbps": 30.6706,
+      "demand_visibility_rate": 0.2298
+    },
+    {
+      "grid_position": {
+        "row": 2,
+        "col": 11
+      },
+      "affected_population": 808,
+      "trapped_population": 54,
+      "rescue_personnel_count": 19,
+      "critical_facility_count": 1,
+      "demand_unit_count": 10,
+      "public_warning_unit_count": 1,
+      "target_broadcast_population": 1063,
+      "demand_user_service_instances": 305,
+      "network_observed_user_service_instances": 72,
+      "network_unobserved_user_service_instances": 233,
+      "baseline_required_bandwidth_mbps": 17.523,
+      "peak_required_bandwidth_mbps": 28.897,
+      "demand_visibility_rate": 0.2361
+    },
+    {
+      "grid_position": {
+        "row": 3,
+        "col": 0
+      },
+      "affected_population": 591,
+      "trapped_population": 42,
+      "rescue_personnel_count": 15,
+      "critical_facility_count": 1,
+      "demand_unit_count": 10,
+      "public_warning_unit_count": 1,
+      "target_broadcast_population": 784,
+      "demand_user_service_instances": 230,
+      "network_observed_user_service_instances": 53,
+      "network_unobserved_user_service_instances": 177,
+      "baseline_required_bandwidth_mbps": 13.911,
+      "peak_required_bandwidth_mbps": 23.0824,
+      "demand_visibility_rate": 0.2304
+    },
+    {
+      "grid_position": {
+        "row": 3,
+        "col": 1
+      },
+      "affected_population": 720,
+      "trapped_population": 54,
+      "rescue_personnel_count": 19,
+      "critical_facility_count": 1,
+      "demand_unit_count": 10,
+      "public_warning_unit_count": 1,
+      "target_broadcast_population": 966,
+      "demand_user_service_instances": 283,
+      "network_observed_user_service_instances": 63,
+      "network_unobserved_user_service_instances": 220,
+      "baseline_required_bandwidth_mbps": 16.731,
+      "peak_required_bandwidth_mbps": 27.689,
+      "demand_visibility_rate": 0.2226
+    },
+    {
+      "grid_position": {
+        "row": 3,
+        "col": 2
+      },
+      "affected_population": 929,
+      "trapped_population": 74,
+      "rescue_personnel_count": 25,
+      "critical_facility_count": 1,
+      "demand_unit_count": 10,
+      "public_warning_unit_count": 1,
+      "target_broadcast_population": 1257,
+      "demand_user_service_instances": 363,
+      "network_observed_user_service_instances": 75,
+      "network_unobserved_user_service_instances": 288,
+      "baseline_required_bandwidth_mbps": 20.352,
+      "peak_required_bandwidth_mbps": 33.505,
+      "demand_visibility_rate": 0.2066
+    },
+    {
+      "grid_position": {
+        "row": 3,
+        "col": 3
+      },
+      "affected_population": 737,
+      "trapped_population": 61,
+      "rescue_personnel_count": 22,
+      "critical_facility_count": 2,
+      "demand_unit_count": 10,
+      "public_warning_unit_count": 1,
+      "target_broadcast_population": 1007,
+      "demand_user_service_instances": 306,
+      "network_observed_user_service_instances": 61,
+      "network_unobserved_user_service_instances": 245,
+      "baseline_required_bandwidth_mbps": 21.094,
+      "peak_required_bandwidth_mbps": 35.4488,
+      "demand_visibility_rate": 0.1993
+    },
+    {
+      "grid_position": {
+        "row": 3,
+        "col": 4
+      },
+      "affected_population": 766,
+      "trapped_population": 69,
+      "rescue_personnel_count": 25,
+      "critical_facility_count": 2,
+      "demand_unit_count": 10,
+      "public_warning_unit_count": 1,
+      "target_broadcast_population": 1063,
+      "demand_user_service_instances": 325,
+      "network_observed_user_service_instances": 62,
+      "network_unobserved_user_service_instances": 263,
+      "baseline_required_bandwidth_mbps": 22.216,
+      "peak_required_bandwidth_mbps": 37.3054,
+      "demand_visibility_rate": 0.1908
+    },
+    {
+      "grid_position": {
+        "row": 3,
+        "col": 5
+      },
+      "affected_population": 1031,
+      "trapped_population": 94,
+      "rescue_personnel_count": 33,
+      "critical_facility_count": 2,
+      "demand_unit_count": 10,
+      "public_warning_unit_count": 1,
+      "target_broadcast_population": 1433,
+      "demand_user_service_instances": 431,
+      "network_observed_user_service_instances": 79,
+      "network_unobserved_user_service_instances": 352,
+      "baseline_required_bandwidth_mbps": 27.788,
+      "peak_required_bandwidth_mbps": 46.4186,
+      "demand_visibility_rate": 0.1833
+    },
+    {
+      "grid_position": {
+        "row": 3,
+        "col": 6
+      },
+      "affected_population": 824,
+      "trapped_population": 71,
+      "rescue_personnel_count": 25,
+      "critical_facility_count": 1,
+      "demand_unit_count": 10,
+      "public_warning_unit_count": 1,
+      "target_broadcast_population": 1132,
+      "demand_user_service_instances": 333,
+      "network_observed_user_service_instances": 63,
+      "network_unobserved_user_service_instances": 270,
+      "baseline_required_bandwidth_mbps": 19.317,
+      "peak_required_bandwidth_mbps": 31.9248,
+      "demand_visibility_rate": 0.1892
+    },
+    {
+      "grid_position": {
+        "row": 3,
+        "col": 7
+      },
+      "affected_population": 712,
+      "trapped_population": 59,
+      "rescue_personnel_count": 21,
+      "critical_facility_count": 1,
+      "demand_unit_count": 10,
+      "public_warning_unit_count": 1,
+      "target_broadcast_population": 971,
+      "demand_user_service_instances": 286,
+      "network_observed_user_service_instances": 57,
+      "network_unobserved_user_service_instances": 229,
+      "baseline_required_bandwidth_mbps": 17.313,
+      "peak_required_bandwidth_mbps": 28.7268,
+      "demand_visibility_rate": 0.1993
+    },
+    {
+      "grid_position": {
+        "row": 3,
+        "col": 8
+      },
+      "affected_population": 737,
+      "trapped_population": 60,
+      "rescue_personnel_count": 22,
+      "critical_facility_count": 1,
+      "demand_unit_count": 10,
+      "public_warning_unit_count": 1,
+      "target_broadcast_population": 1003,
+      "demand_user_service_instances": 296,
+      "network_observed_user_service_instances": 62,
+      "network_unobserved_user_service_instances": 234,
+      "baseline_required_bandwidth_mbps": 17.618,
+      "peak_required_bandwidth_mbps": 29.187,
+      "demand_visibility_rate": 0.2095
+    },
+    {
+      "grid_position": {
+        "row": 3,
+        "col": 9
+      },
+      "affected_population": 959,
+      "trapped_population": 73,
+      "rescue_personnel_count": 25,
+      "critical_facility_count": 1,
+      "demand_unit_count": 10,
+      "public_warning_unit_count": 1,
+      "target_broadcast_population": 1290,
+      "demand_user_service_instances": 371,
+      "network_observed_user_service_instances": 79,
+      "network_unobserved_user_service_instances": 292,
+      "baseline_required_bandwidth_mbps": 20.619,
+      "peak_required_bandwidth_mbps": 33.9154,
+      "demand_visibility_rate": 0.2129
+    },
+    {
+      "grid_position": {
+        "row": 3,
+        "col": 10
+      },
+      "affected_population": 764,
+      "trapped_population": 55,
+      "rescue_personnel_count": 19,
+      "critical_facility_count": 1,
+      "demand_unit_count": 10,
+      "public_warning_unit_count": 1,
+      "target_broadcast_population": 1018,
+      "demand_user_service_instances": 294,
+      "network_observed_user_service_instances": 66,
+      "network_unobserved_user_service_instances": 228,
+      "baseline_required_bandwidth_mbps": 17.072,
+      "peak_required_bandwidth_mbps": 28.2098,
+      "demand_visibility_rate": 0.2245
+    },
+    {
+      "grid_position": {
+        "row": 3,
+        "col": 11
+      },
+      "affected_population": 625,
+      "trapped_population": 41,
+      "rescue_personnel_count": 15,
+      "critical_facility_count": 1,
+      "demand_unit_count": 10,
+      "public_warning_unit_count": 1,
+      "target_broadcast_population": 821,
+      "demand_user_service_instances": 237,
+      "network_observed_user_service_instances": 57,
+      "network_unobserved_user_service_instances": 180,
+      "baseline_required_bandwidth_mbps": 14.221,
+      "peak_required_bandwidth_mbps": 23.5528,
+      "demand_visibility_rate": 0.2405
+    },
+    {
+      "grid_position": {
+        "row": 4,
+        "col": 0
+      },
+      "affected_population": 800,
+      "trapped_population": 55,
+      "rescue_personnel_count": 19,
+      "critical_facility_count": 1,
+      "demand_unit_count": 10,
+      "public_warning_unit_count": 1,
+      "target_broadcast_population": 1057,
+      "demand_user_service_instances": 303,
+      "network_observed_user_service_instances": 70,
+      "network_unobserved_user_service_instances": 233,
+      "baseline_required_bandwidth_mbps": 17.473,
+      "peak_required_bandwidth_mbps": 28.817,
+      "demand_visibility_rate": 0.231
+    },
+    {
+      "grid_position": {
+        "row": 4,
+        "col": 1
+      },
+      "affected_population": 845,
+      "trapped_population": 64,
+      "rescue_personnel_count": 22,
+      "critical_facility_count": 1,
+      "demand_unit_count": 10,
+      "public_warning_unit_count": 1,
+      "target_broadcast_population": 1134,
+      "demand_user_service_instances": 330,
+      "network_observed_user_service_instances": 71,
+      "network_unobserved_user_service_instances": 259,
+      "baseline_required_bandwidth_mbps": 18.794,
+      "peak_required_bandwidth_mbps": 30.984,
+      "demand_visibility_rate": 0.2152
+    },
+    {
+      "grid_position": {
+        "row": 4,
+        "col": 2
+      },
+      "affected_population": 916,
+      "trapped_population": 70,
+      "rescue_personnel_count": 24,
+      "critical_facility_count": 1,
+      "demand_unit_count": 10,
+      "public_warning_unit_count": 1,
+      "target_broadcast_population": 1233,
+      "demand_user_service_instances": 358,
+      "network_observed_user_service_instances": 75,
+      "network_unobserved_user_service_instances": 283,
+      "baseline_required_bandwidth_mbps": 20.219,
+      "peak_required_bandwidth_mbps": 33.3116,
+      "demand_visibility_rate": 0.2095
+    },
+    {
+      "grid_position": {
+        "row": 4,
+        "col": 3
+      },
+      "affected_population": 695,
+      "trapped_population": 57,
+      "rescue_personnel_count": 21,
+      "critical_facility_count": 1,
+      "demand_unit_count": 10,
+      "public_warning_unit_count": 1,
+      "target_broadcast_population": 946,
+      "demand_user_service_instances": 280,
+      "network_observed_user_service_instances": 57,
+      "network_unobserved_user_service_instances": 223,
+      "baseline_required_bandwidth_mbps": 17.099,
+      "peak_required_bandwidth_mbps": 28.4014,
+      "demand_visibility_rate": 0.2036
+    },
+    {
+      "grid_position": {
+        "row": 4,
+        "col": 4
+      },
+      "affected_population": 819,
+      "trapped_population": 71,
+      "rescue_personnel_count": 25,
+      "critical_facility_count": 1,
+      "demand_unit_count": 10,
+      "public_warning_unit_count": 1,
+      "target_broadcast_population": 1126,
+      "demand_user_service_instances": 332,
+      "network_observed_user_service_instances": 63,
+      "network_unobserved_user_service_instances": 269,
+      "baseline_required_bandwidth_mbps": 19.251,
+      "peak_required_bandwidth_mbps": 31.828,
+      "demand_visibility_rate": 0.1898
+    },
+    {
+      "grid_position": {
+        "row": 4,
+        "col": 5
+      },
+      "affected_population": 943,
+      "trapped_population": 81,
+      "rescue_personnel_count": 28,
+      "critical_facility_count": 2,
+      "demand_unit_count": 10,
+      "public_warning_unit_count": 1,
+      "target_broadcast_population": 1294,
+      "demand_user_service_instances": 387,
+      "network_observed_user_service_instances": 74,
+      "network_unobserved_user_service_instances": 313,
+      "baseline_required_bandwidth_mbps": 25.315,
+      "peak_required_bandwidth_mbps": 42.3448,
+      "demand_visibility_rate": 0.1912
+    },
+    {
+      "grid_position": {
+        "row": 4,
+        "col": 6
+      },
+      "affected_population": 874,
+      "trapped_population": 74,
+      "rescue_personnel_count": 26,
+      "critical_facility_count": 1,
+      "demand_unit_count": 10,
+      "public_warning_unit_count": 1,
+      "target_broadcast_population": 1196,
+      "demand_user_service_instances": 349,
+      "network_observed_user_service_instances": 70,
+      "network_unobserved_user_service_instances": 279,
+      "baseline_required_bandwidth_mbps": 20.414,
+      "peak_required_bandwidth_mbps": 33.7554,
+      "demand_visibility_rate": 0.2006
+    },
+    {
+      "grid_position": {
+        "row": 4,
+        "col": 7
+      },
+      "affected_population": 711,
+      "trapped_population": 57,
+      "rescue_personnel_count": 21,
+      "critical_facility_count": 1,
+      "demand_unit_count": 10,
+      "public_warning_unit_count": 1,
+      "target_broadcast_population": 965,
+      "demand_user_service_instances": 284,
+      "network_observed_user_service_instances": 59,
+      "network_unobserved_user_service_instances": 225,
+      "baseline_required_bandwidth_mbps": 17.287,
+      "peak_required_bandwidth_mbps": 28.685,
+      "demand_visibility_rate": 0.2077
+    },
+    {
+      "grid_position": {
+        "row": 4,
+        "col": 8
+      },
+      "affected_population": 727,
+      "trapped_population": 57,
+      "rescue_personnel_count": 20,
+      "critical_facility_count": 1,
+      "demand_unit_count": 10,
+      "public_warning_unit_count": 1,
+      "target_broadcast_population": 981,
+      "demand_user_service_instances": 286,
+      "network_observed_user_service_instances": 60,
+      "network_unobserved_user_service_instances": 226,
+      "baseline_required_bandwidth_mbps": 16.794,
+      "peak_required_bandwidth_mbps": 27.7788,
+      "demand_visibility_rate": 0.2098
+    },
+    {
+      "grid_position": {
+        "row": 4,
+        "col": 9
+      },
+      "affected_population": 859,
+      "trapped_population": 62,
+      "rescue_personnel_count": 21,
+      "critical_facility_count": 1,
+      "demand_unit_count": 10,
+      "public_warning_unit_count": 1,
+      "target_broadcast_population": 1145,
+      "demand_user_service_instances": 329,
+      "network_observed_user_service_instances": 74,
+      "network_unobserved_user_service_instances": 255,
+      "baseline_required_bandwidth_mbps": 18.825,
+      "peak_required_bandwidth_mbps": 31.036,
+      "demand_visibility_rate": 0.2249
+    },
+    {
+      "grid_position": {
+        "row": 4,
+        "col": 10
+      },
+      "affected_population": 769,
+      "trapped_population": 54,
+      "rescue_personnel_count": 19,
+      "critical_facility_count": 1,
+      "demand_unit_count": 10,
+      "public_warning_unit_count": 1,
+      "target_broadcast_population": 1019,
+      "demand_user_service_instances": 294,
+      "network_observed_user_service_instances": 68,
+      "network_unobserved_user_service_instances": 226,
+      "baseline_required_bandwidth_mbps": 17.161,
+      "peak_required_bandwidth_mbps": 28.343,
+      "demand_visibility_rate": 0.2313
+    },
+    {
+      "grid_position": {
+        "row": 4,
+        "col": 11
+      },
+      "affected_population": 859,
+      "trapped_population": 55,
+      "rescue_personnel_count": 19,
+      "critical_facility_count": 1,
+      "demand_unit_count": 10,
+      "public_warning_unit_count": 1,
+      "target_broadcast_population": 1124,
+      "demand_user_service_instances": 319,
+      "network_observed_user_service_instances": 76,
+      "network_unobserved_user_service_instances": 243,
+      "baseline_required_bandwidth_mbps": 18.072,
+      "peak_required_bandwidth_mbps": 29.7328,
+      "demand_visibility_rate": 0.2382
+    }
+  ],
+  "notes": [
+    "User-service instance totals are not unique-person counts.",
+    "Public-warning target population is reported separately from user-service instances.",
+    "Demand units are structured multi-source field collection records."
+  ]
+}

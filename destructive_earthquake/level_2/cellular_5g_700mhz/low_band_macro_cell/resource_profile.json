@@ -74,9 +74,9 @@
     "average_cell_user_count": 25.0,
     "unique_grid_count": 9,
     "effective_covered_grid_count": 8,
-    "estimated_grid_area_km2": 72.0,
-    "estimated_effective_grid_area_km2": 64.0,
-    "radio_coverage_area_km2_no_overlap_removed": 43.917
+    "radio_coverage_area_km2_no_overlap_removed": 43.917,
+    "covered_grid_area_km2": 72.0,
+    "effective_covered_grid_area_km2": 64.0
   },
   "operation_status_summary": {
     "physical_station_count": 10,
